@@ -11,6 +11,8 @@ public class Utils {
 
 	public static int time2color() {
 		SimpleDateFormat formatter = new SimpleDateFormat("HHmmss");
-		return Integer.parseInt(formatter.format(new Date()));
+		String colorInt = formatter.format(new Date());
+		colorInt = colorInt.length() < 8 ? "0" + colorInt : colorInt;
+		return Integer.parseInt(colorInt);
 	}
 }

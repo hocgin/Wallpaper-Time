@@ -116,7 +116,7 @@ public class ScreenService extends WallpaperService {
 			}
 			handler.removeCallbacks(drawRunnable);
 			if (isVisible) {
-				handler.postDelayed(drawRunnable, 1 * 1000);
+				handler.postDelayed(drawRunnable, 1 * 1000); // 1s
 			}
 		}
 	}
